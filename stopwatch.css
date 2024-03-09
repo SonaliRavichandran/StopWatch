@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#12CBC4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select:none;
+    cursor: pointer;
+}
+
+.frame{
+    display: flex;
+    gap: 3px;
+    
+    
+}
+.hrs,.min,.sec,.ms,.colon{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0,0,0.8)
+}
+.colon{
+    height: 50px;
+    width: 10px;
+}
+.buttons button{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.buttons button{
+    display: inline-block;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.start{
+    background-color: green;
+}
+
+.stop{
+    background-color: red;
+
+}
+
+.reset{
+    background-color: blue;
+}
+
+.start-active,.stop-active{
+    pointer-events: none;
+    opacity: 0.5;
+}
